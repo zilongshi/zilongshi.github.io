@@ -86,7 +86,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux," />
 
 
 
@@ -102,19 +102,22 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="通过启动sublime text 3时指定LD_PRELOAD来修复ubuntu 16.04中sublime text 3不支持fcitx中文输入法的问题。Sublime Text 3安装路径为/opt/sublime_text/
+1.安装C/C++的编译环境和gtk libgtk2.0-devsudo apt-get install build-essential
+sudo apt-get in">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://zilongshi.com/2016/12/12/hello-world/index.html">
+<meta property="og:title" content="Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法">
+<meta property="og:url" content="http://zilongshi.com/2016/06/27/fix-sublime-cannot-using-fcitx/index.html">
 <meta property="og:site_name" content="Shi Zilong's website'">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-12-12T10:32:00.519Z">
+<meta property="og:description" content="通过启动sublime text 3时指定LD_PRELOAD来修复ubuntu 16.04中sublime text 3不支持fcitx中文输入法的问题。Sublime Text 3安装路径为/opt/sublime_text/
+1.安装C/C++的编译环境和gtk libgtk2.0-devsudo apt-get install build-essential
+sudo apt-get in">
+<meta property="og:updated_time" content="2016-12-13T02:14:23.538Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法">
+<meta name="twitter:description" content="通过启动sublime text 3时指定LD_PRELOAD来修复ubuntu 16.04中sublime text 3不支持fcitx中文输入法的问题。Sublime Text 3安装路径为/opt/sublime_text/
+1.安装C/C++的编译环境和gtk libgtk2.0-devsudo apt-get install build-essential
+sudo apt-get in">
 
 
 
@@ -142,13 +145,13 @@ Quick">
 
 
 
-  <link rel="canonical" href="http://zilongshi.com/2016/12/12/hello-world/"/>
+  <link rel="canonical" href="http://zilongshi.com/2016/06/27/fix-sublime-cannot-using-fcitx/"/>
 
 
 
 
 
-  <title> Hello World | Shi Zilong's website' </title>
+  <title> Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法 | Shi Zilong's website' </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -302,7 +305,7 @@ Quick">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://zilongshi.com/2016/12/12/hello-world/">
+  <link itemprop="mainEntityOfPage" href="http://zilongshi.com/2016/06/27/fix-sublime-cannot-using-fcitx/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Liam Shi">
@@ -326,7 +329,7 @@ Quick">
             
             
               
-                Hello World
+                Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法
               
             
           </h1>
@@ -339,8 +342,8 @@ Quick">
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-12T18:32:00+08:00">
-                2016-12-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-06-27T14:57:14+08:00">
+                2016-06-27
               </time>
             
 
@@ -355,8 +358,8 @@ Quick">
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/2016/12/12/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/12/hello-world/" itemprop="commentCount"></span>
+                <a href="/2016/06/27/fix-sublime-cannot-using-fcitx/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/27/fix-sublime-cannot-using-fcitx/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -382,15 +385,30 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>通过启动sublime text 3时指定LD_PRELOAD来修复ubuntu 16.04中sublime text 3不支持fcitx中文输入法的问题。<br>Sublime Text 3安装路径为/opt/sublime_text/</p>
+<h3 id="1-安装C-C-的编译环境和gtk-libgtk2-0-dev"><a href="#1-安装C-C-的编译环境和gtk-libgtk2-0-dev" class="headerlink" title="1.安装C/C++的编译环境和gtk libgtk2.0-dev"></a>1.安装C/C++的编译环境和gtk libgtk2.0-dev</h3><pre><code>sudo apt-get install build-essential
+sudo apt-get install libgtk2.0-dev
+</code></pre><h3 id="2-编译共享内库"><a href="#2-编译共享内库" class="headerlink" title="2.编译共享内库"></a>2.编译共享内库</h3><pre><code>gcc -shared -o libsublime-imfix.so sublime-imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC
+</code></pre><h4 id="sublime-imfix-c代码由OSChina-Wuu原帖给出，搬运如下："><a href="#sublime-imfix-c代码由OSChina-Wuu原帖给出，搬运如下：" class="headerlink" title="sublime-imfix.c代码由OSChina Wuu原帖给出，搬运如下："></a>sublime-imfix.c代码由OSChina Wuu<a href="http://my.oschina.net/wugaoxing/blog/121281" target="_blank" rel="external">原帖</a>给出，搬运如下：</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">sublime-imfix.c</div><div class="line">Use LD_PRELOAD to interpose some function to fix sublime input method support for linux.</div><div class="line">By Cjacker Huang &lt;jianzhong.huang at i-soft.com.cn&gt;</div><div class="line">gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC</div><div class="line">LD_PRELOAD=./libsublime-imfix.so sublime_text</div><div class="line">*/</div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;gtk/gtk.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;gdk/gdkx.h&gt;</span></span></div><div class="line"><span class="keyword">typedef</span> GdkSegment GdkRegionBox;</div><div class="line"></div><div class="line"><span class="keyword">struct</span> _GdkRegion</div><div class="line">&#123;</div><div class="line">  <span class="keyword">long</span> size;</div><div class="line">  <span class="keyword">long</span> numRects;</div><div class="line">  GdkRegionBox *rects;</div><div class="line">  GdkRegionBox extents;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">GtkIMContext *local_context;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span></span></div><div class="line"><span class="title">gdk_region_get_clipbox</span> <span class="params">(<span class="keyword">const</span> GdkRegion *region,</span></div><div class="line">            GdkRectangle    *rectangle)</div><div class="line">&#123;</div><div class="line">  g_return_if_fail (region != <span class="literal">NULL</span>);</div><div class="line">  g_return_if_fail (rectangle != <span class="literal">NULL</span>);</div><div class="line"></div><div class="line">  rectangle-&gt;x = region-&gt;extents.x1;</div><div class="line">  rectangle-&gt;y = region-&gt;extents.y1;</div><div class="line">  rectangle-&gt;width = region-&gt;extents.x2 - region-&gt;extents.x1;</div><div class="line">  rectangle-&gt;height = region-&gt;extents.y2 - region-&gt;extents.y1;</div><div class="line">  GdkRectangle rect;</div><div class="line">  rect.x = rectangle-&gt;x;</div><div class="line">  rect.y = rectangle-&gt;y;</div><div class="line">  rect.width = <span class="number">0</span>;</div><div class="line">  rect.height = rectangle-&gt;height; </div><div class="line">  <span class="comment">//The caret width is 2; </span></div><div class="line">  <span class="comment">//Maybe sometimes we will make a mistake, but for most of the time, it should be the caret.</span></div><div class="line">  <span class="keyword">if</span>(rectangle-&gt;width == <span class="number">2</span> &amp;&amp; GTK_IS_IM_CONTEXT(local_context)) &#123;</div><div class="line">        gtk_im_context_set_cursor_location(local_context, rectangle);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//this is needed, for example, if you input something in file dialog and return back the edit area</span></div><div class="line"><span class="comment">//context will lost, so here we set it again.</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">static</span> GdkFilterReturn <span class="title">event_filter</span> <span class="params">(GdkXEvent *xevent, GdkEvent *event, gpointer im_context)</span></span></div><div class="line">&#123;</div><div class="line">    XEvent *xev = (XEvent *)xevent;</div><div class="line">    <span class="keyword">if</span>(xev-&gt;type == KeyRelease &amp;&amp; GTK_IS_IM_CONTEXT(im_context)) &#123;</div><div class="line">       GdkWindow * win = g_object_get_data(G_OBJECT(im_context),<span class="string">"window"</span>);</div><div class="line">       <span class="keyword">if</span>(GDK_IS_WINDOW(win))</div><div class="line">         gtk_im_context_set_client_window(im_context, win);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> GDK_FILTER_CONTINUE;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">gtk_im_context_set_client_window</span> <span class="params">(GtkIMContext *context,</span></span></div><div class="line">          GdkWindow    *window)</div><div class="line">&#123;</div><div class="line">  GtkIMContextClass *klass;</div><div class="line">  g_return_if_fail (GTK_IS_IM_CONTEXT (context));</div><div class="line">  klass = GTK_IM_CONTEXT_GET_CLASS (context);</div><div class="line">  <span class="keyword">if</span> (klass-&gt;set_client_window)</div><div class="line">    klass-&gt;set_client_window (context, window);</div><div class="line"></div><div class="line">  <span class="keyword">if</span>(!GDK_IS_WINDOW (window))</div><div class="line">    <span class="keyword">return</span>;</div><div class="line">  g_object_set_data(G_OBJECT(context),<span class="string">"window"</span>,window);</div><div class="line">  <span class="keyword">int</span> width = gdk_window_get_width(window);</div><div class="line">  <span class="keyword">int</span> height = gdk_window_get_height(window);</div><div class="line">  <span class="keyword">if</span>(width != <span class="number">0</span> &amp;&amp; height !=<span class="number">0</span>) &#123;</div><div class="line">    gtk_im_context_focus_in(context);</div><div class="line">    local_context = context;</div><div class="line">  &#125;</div><div class="line">  gdk_window_add_filter (window, event_filter, context); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3-将libsublime-imfix-so移动到-usr-lib"><a href="#3-将libsublime-imfix-so移动到-usr-lib" class="headerlink" title="3.将libsublime-imfix.so移动到/usr/lib/"></a>3.将libsublime-imfix.so移动到/usr/lib/</h3><pre><code>sudo mv libsublime-imfix.so /usr/lib/
+</code></pre><h3 id="4-启动-Sublime-Text-3"><a href="#4-启动-Sublime-Text-3" class="headerlink" title="4.启动 Sublime Text 3"></a>4.启动 Sublime Text 3</h3><pre><code>LD_PRELOAD=/usr/lib/libsublime-imfix.so subl
+</code></pre><p>即可运行Fcitx的搜狗拼音输入法了。</p>
+<p>为了避免每次都要在终端里面使用命令启动sublime text 3，还要通过修改subl以及sublime-text.desktop达到统一的启动效果。</p>
+<h3 id="1-打开sublime-text-3"><a href="#1-打开sublime-text-3" class="headerlink" title="1.打开sublime-text-3"></a>1.打开sublime-text-3</h3><pre><code>sudo vim /usr/bin/subl
+</code></pre><h3 id="2-修改subl为以下内容"><a href="#2-修改subl为以下内容" class="headerlink" title="2.修改subl为以下内容"></a>2.修改subl为以下内容</h3><pre><code>#!/bin/bash
+
+LD_PRELOAD=/usr/lib/libsublime-imfix.so /opt/sublime_text/sublime_text &quot;$@&quot;
+</code></pre><p>这样就能使用subl等命令启动</p>
+<h3 id="3-打开sublime-text-desktop"><a href="#3-打开sublime-text-desktop" class="headerlink" title="3.打开sublime-text.desktop"></a>3.打开sublime-text.desktop</h3><pre><code>sudo vim /usr/share/applications/sublime-text.desktop
+</code></pre><h3 id="4-修改sublime-text-desktop"><a href="#4-修改sublime-text-desktop" class="headerlink" title="4.修改sublime-text.desktop"></a>4.修改sublime-text.desktop</h3><p>将</p>
+<pre><code>Exec=/usr/bin/sublime-text-3 %F
+</code></pre><p>修改为</p>
+<pre><code>Exec=bash -c &apos;LD_PRELOAD=/usr/lib/libsublime-imfix.so /usr/bin/sublime-text-3&apos; %F
+</code></pre><p>将</p>
+<pre><code>Exec=/usr/bin/sublime-text-3 --new-window
+</code></pre><p>修改为</p>
+<pre><code>Exec=bash -c &apos;LD_PRELOAD=/usr/lib/libsublime-imfix.so /usr/bin/sublime-text-3&apos; --new-window
+</code></pre><p>感谢Wuu<a href="http://my.oschina.net/wugaoxing/blog/121281" target="_blank" rel="external">原帖</a>给出解决方案。</p>
 
       
     </div>
@@ -412,20 +430,26 @@ Quick">
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/06/27/fix-sublime-cannot-using-fcitx/" rel="next" title="Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法">
-                <i class="fa fa-chevron-left"></i> Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法
-              </a>
             
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/12/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -454,8 +478,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/12/hello-world/"
-           data-title="Hello World" data-url="http://zilongshi.com/2016/12/12/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/06/27/fix-sublime-cannot-using-fcitx/"
+           data-title="Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法" data-url="http://zilongshi.com/2016/06/27/fix-sublime-cannot-using-fcitx/">
       </div>
     
   </div>
@@ -556,7 +580,7 @@ Quick">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-安装C-C-的编译环境和gtk-libgtk2-0-dev"><span class="nav-number">1.</span> <span class="nav-text">1.安装C/C++的编译环境和gtk libgtk2.0-dev</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-编译共享内库"><span class="nav-number">2.</span> <span class="nav-text">2.编译共享内库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sublime-imfix-c代码由OSChina-Wuu原帖给出，搬运如下："><span class="nav-number">2.1.</span> <span class="nav-text">sublime-imfix.c代码由OSChina Wuu原帖给出，搬运如下：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-将libsublime-imfix-so移动到-usr-lib"><span class="nav-number">3.</span> <span class="nav-text">3.将libsublime-imfix.so移动到/usr/lib/</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-启动-Sublime-Text-3"><span class="nav-number">4.</span> <span class="nav-text">4.启动 Sublime Text 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-打开sublime-text-3"><span class="nav-number">5.</span> <span class="nav-text">1.打开sublime-text-3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-修改subl为以下内容"><span class="nav-number">6.</span> <span class="nav-text">2.修改subl为以下内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-打开sublime-text-desktop"><span class="nav-number">7.</span> <span class="nav-text">3.打开sublime-text.desktop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-修改sublime-text-desktop"><span class="nav-number">8.</span> <span class="nav-text">4.修改sublime-text.desktop</span></a></li></ol></div>
             
 
           </div>
