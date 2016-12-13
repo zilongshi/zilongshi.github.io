@@ -1,6 +1,6 @@
 ---
 title: Linux下修复Sublime Text 3无法使用Fcitx搜狗拼音的方法
-date: 2016-06-27 14:57:14
+date: 2016-12-13 10:25:10
 tags: "Linux"
 ---
 
